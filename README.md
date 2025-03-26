@@ -48,9 +48,9 @@ Des skins alternatifs des personnages sont en réflexion, ceux ci coûtant plus 
 ⚠️**Attention** : Lorsque que vous arrivez sur cet écran, les pastilles vertes de vos véhicules équipés n'apparaitront pas, mais cela n'a aucune incidence sur le code intérieur. Aussi, il est déconseillé d'acheter et d'équiper un slot vide, ce qui pourrait faire buger le jeu et vous empêcher définitivement l'accès au magasin, ou même à votre compte, à cause des conflits entre enregistrements de bases de données et code Python.
 
 ### Requis pour utiliser le code
-Python 3.10.11  
+Python 3.10.11 
 Pygame 2.5.2  
 Random  
 Sqlite3 (pour les requêtes sur la base de données)  
 JSON  
-Time  
+Time
