@@ -7,7 +7,7 @@ Pour l'instant il n'y en a pas.
 ## Gameplay
 Lors d'un niveau, le joueur est mis aux commandes d'un véhicule parmi **deux** (d'autres pourraient être ajoutés dans le futur) :  
 **Sauteroule :** Une petite voiture inspirée d'une Wolkswagen beetle et d'une sauterelle. Elle avance en ligne droite, ne supporte pas d'être frappée par des obstacles ou de se coincer contre des plateformes. Pour éviter toute inconvénience, pressez la touche "flèche du haut" lui permet de sauter. Laisser le bouton enfoncé permet de sauter à répétition.  
-**Boing Boeing :** Un petit avion inspiré d'un avion Boeing et d'un condor noir. Celui ci permet d'explorer l'écran dans son ensemble. Appuyer sur "flèche du haut" lui donne un léger coup de boost vers le haut, lâcher le bouton le fait redescendre. Appuyer à répétition sur le bouton permet de monter plus vite, et même de rester sur du vol en ligne droite. Laisser le bouton enfoncé le fait monter jusqu'à qu'il soit lâché. Contrairement à la Sauteroule, tomber sur la route principale lui fait des dégât, et monter trop haut le tue, pour éviter qu'il ne quitter la caméra.
+**Boing Boeing :** Un petit avion inspiré d'un avion Boeing et d'un condor noir. Celui ci permet d'explorer l'écran dans son ensemble. Appuyer sur "flèche du haut" lui donne un léger coup de boost vers le haut, lâcher le bouton le fait redescendre. Appuyer à répétition sur le bouton permet de monter plus vite, et même de rester sur du vol en ligne droite. Laisser le bouton enfoncé le fait monter jusqu'à qu'il soit lâché. Contrairement à la Sauteroule, tomber sur la route principale lui fait des dégât, et monter trop haut le tue, pour éviter qu'il ne quitte la caméra.
 
 ## Navigation 
 ### Écran de connexion
@@ -20,7 +20,7 @@ Cet écran est le hub central du jeu. Il contient de nombreux boutons.
 **Bonus** : Ce bouton renvoie vers un autre écran de sélection, qui permet de s'essayer dans des minis jeux (actuellement un seul fonctionnel).  
 **Garage** : Ce bouton renvoie vers le profil du joueur.  
 **Quitter** : Ce bouton permet de fermer la page Pygame. Idéal lorsque l'on joue en grand écran sans avoir accès à la croix. Notez que la base de données sauvegarde toutes les données instantanément, il n'y a donc pas de sauvegarde requise avant de quitter.  
-**Paramètres** : Ce bouton devrait renvoyer vers un écran de paramètres, mais ceux ci n'ont pas encore été créés.  
+**Paramètres** : Ce bouton renvoie vers une liste de paramètres aussi accessibles via l'écran de connexion. Le joueur peut choisir d'éteindre la musique du jeu ou de la rallumer, le cas échéant. Il peut aussi changer de langue (entre le français, l'allemand et l'anglais) pour les écrans de navigation.  
 
 ### Monde 1 : Atoll Atellage
 Le premier monde du jeu, ressemble à une petite île paradisiaque... ou presque ! Entre industries, travail du bois, commerce et tourisme, on n'est pas prêt de s'ennuyer ici ! Chaque niveau est représenté par une puce rouge, placée à coté du décor étant un avant goût du thème du niveau. La puce en forme d'étoile serait là pour accueillir un boss, bien que pour l'instant, il n'en est rien ! Les niveaux sont numérotés de haut en bas en partant de la gauche.  
