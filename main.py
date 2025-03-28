@@ -1360,4 +1360,5 @@ running = False
 continuer_soon = False
 premier = 0
 replay = 1
+print("Pour plus de rensignements, ou si vous souhaitez nous aider, jetez donc un œil à https://raakipedia.miraheze.org/wiki/Accueil, le wiki de notre jeu, hébergé sur Miraheze !") 
 ecran_connexion()
