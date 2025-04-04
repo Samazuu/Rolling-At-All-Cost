@@ -170,13 +170,13 @@ class Ennemi:
         self.compteur += 1
         self.x1 = largeur*0.3 + largeur*0.12*randint(0, 3)
         
-        if self.compteur_distance == 101 - self.difficulte :
+        if self.compteur_distance == 51 - self.difficulte :
             self.compteur_distance = 0
-            if self.difficulte < 50 :
+            if self.difficulte < 20 :
                 self.difficulte += 1
             Maproute.set_speed(Maproute.get_speed()*1.1)
             
-        elif self.compteur_distance == 100 - self.difficulte :
+        elif self.compteur_distance == 50 - self.difficulte :
             if self.get_x() <= largeur*0.3 :
                 img = pygame.image.load("Camion1d.png")
             elif self.get_x() >= largeur*0.7 :
@@ -185,8 +185,9 @@ class Ennemi:
                 img = pygame.image.load("Camion1m.png")
             liste_ennemi.append(Ennemi(img, self.x1))
             score += 1
+            print(score)
             
-        if self.compteur == 100 - self.difficulte :
+        if self.compteur == 50 - self.difficulte :
             self.compteur = 0
             del self
             
