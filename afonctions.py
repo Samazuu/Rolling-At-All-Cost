@@ -28,17 +28,24 @@ def langue_img(img_fr, img_ang, img_all):
         return pygame.image.load(img_all)
     
 
-def afficher_record_flappy(score, ecran):
+def afficher_record(score, ecran, id_jeu):
     pygame.font.init()
     score_display = pygame.font.Font("Wonderly.otf", hauteur//18).render(str(score), 0, (255, 100, 0))
     if ecran == 'profilMenu':
-        nom_jeu = pygame.font.Font("Wonderly.otf", hauteur//20).render('FlappyTours', 0, (255, 100, 0))
-        plateau.blit(nom_jeu, (largeur*0.84, hauteur*0.38))
-        plateau.blit(score_display, (largeur*0.9, hauteur*0.46))
+        if id_jeu==2:
+            nom_jeu = pygame.font.Font("Wonderly.otf", hauteur//20).render('FlappyTours', 0, (255, 100, 0))
+        elif id_jeu==3:
+            nom_jeu = pygame.font.Font("Wonderly.otf", hauteur//20).render('CarRun', 0, (255, 100, 0))
+        plateau.blit(nom_jeu, (largeur*0.84, hauteur*(0.58-id_jeu*0.1)))
+        plateau.blit(score_display, (largeur*0.97, hauteur*(0.58-id_jeu*0.1)))
     else :
         mot_score = pygame.font.Font("Wonderly.otf", hauteur//18).render('score :', 0, (255, 100, 0))
-        plateau.blit(mot_score, (largeur*0.17, hauteur*0.22))
-        plateau.blit(score_display, (largeur*0.28, hauteur*0.22))
+        if id_jeu==2:
+            plateau.blit(mot_score, (largeur*0.3, hauteur*0.03))
+            plateau.blit(score_display, (largeur*0.38, hauteur*0.03))
+        elif id_jeu==3:
+            plateau.blit(mot_score, (largeur*0.45, hauteur*0.94))
+            plateau.blit(score_display, (largeur*0.53, hauteur*0.94))
         
 
 def niveau_reussi(est_reussi, id_profil, temp_piece, id_niv):

@@ -65,6 +65,7 @@ liste_slots = [[slotCar1, slotCar2, slotCar3, slotCar4, slotCar5, slotCar6, slot
         
 
 #décors de chaques niveaux
+Maproute = Decor((Maproutei), 8)
 Mapyork = Decor((NewNewYorki), 9)
 Testmap = Decor((Oceani), 10)
 Mapusine = Decor((Factoryi), 11)

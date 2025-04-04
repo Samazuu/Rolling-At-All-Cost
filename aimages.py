@@ -22,6 +22,7 @@ BretourGi = pygame.image.load('BretourG.png')
 Bsloti = pygame.image.load('Bslot.png')
 BslotBuyi = pygame.image.load('BslotBuy.png')
 BslotEquipei = pygame.image.load('BslotEquipe.png')
+
 # décors de chaques niveaux
 Factoryi = pygame.image.load('Factory.png')
 Concerti = pygame.image.load('Concert.png')
@@ -30,6 +31,8 @@ Parki = pygame.image.load('Park.png')
 Mountaini = pygame.image.load('Mountain.png')
 Oceani = pygame.image.load('Ocean.png')
 NewNewYorki = pygame.image.load('NewNewYork.png')
+Maproutei = pygame.image.load('Autoroute.png')
+
 # points de vie
 LifeBarFulli = pygame.image.load('LifeBarFull.png')
 LifeBarHalfi = pygame.image.load('LifeBarHalf.png')

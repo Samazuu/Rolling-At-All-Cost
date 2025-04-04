@@ -17,7 +17,10 @@ class Decor :
     def __init__(self, img = pygame.image.load('Ocean.png'), niveau = 10, x=0, y=0, speed=largeur/100, sol=hauteur*0.74):
         self.speed = speed
         self.img = img
-        self.img = pygame.transform.scale(img, (img.get_width()*largeur//1970, hauteur))
+        if niveau!=8:
+            self.img = pygame.transform.scale(img, (img.get_width()*largeur//1970, hauteur))
+        else:
+            self.img = pygame.transform.scale(img, (largeur, hauteur*2))
         self.x = x
         self.y = y
         self.sol = sol 
@@ -95,7 +98,7 @@ class Piece(Obstacle) :
     def __init__(self, img, x, y):
         super().__init__(img, x, y)
         self.timesprite_piece = 0
-        
+    
     def animer(self):
         self.timesprite_piece += 1
         if self.timesprite_piece == 0 :
@@ -105,6 +108,19 @@ class Piece(Obstacle) :
         elif self.timesprite_piece == 2 :
             self.set_img(pygame.image.load('piece2.png'))
             self.timesprite_piece = -1
+
+class Boss(Obstacle) :
+    #cette classe défini les obstacles de type 'carré'
+    #les carrés tuent instantanément mais on peut rouler par-dessus
+    def __init__(self, img, x, y):
+        super().__init__(img, x, y)
+        self.compteur = 0
+        
+    def animer(self):
+        if self.compteur%2==1:
+            self.set_img(pygame.image.load('boss1-1.png'))
+        else:
+            self.set_img(pygame.image.load('boss1-2.png'))
 
         
 class Valide :
